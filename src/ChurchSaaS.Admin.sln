@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChurchSaaS.Admin.Api", "ChurchSaaS.Admin.Api/ChurchSaaS.Admin.Api.csproj", "{4FD1393A-4F18-4EDD-A6FF-1902C8F24721}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChurchSaaS.Admin.BlazorApp", "ChurchSaaS.Admin.BlazorApp/ChurchSaaS.Admin.BlazorApp.csproj", "{CDAEDCFF-DABC-437C-86ED-F71C53EA93B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChurchSaaS.Admin.Application", "ChurchSaaS.Admin.Application/ChurchSaaS.Admin.Application.csproj", "{285548F3-5A9C-4D2E-9F18-2C24AF33EDAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChurchSaaS.Admin.Domain", "ChurchSaaS.Admin.Domain/ChurchSaaS.Admin.Domain.csproj", "{DD4465CD-BA29-43E9-B1FB-1550376471DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChurchSaaS.Admin.Infrastructure", "ChurchSaaS.Admin.Infrastructure/ChurchSaaS.Admin.Infrastructure.csproj", "{94186085-A70A-4679-BDA7-41C790871953}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {4FD1393A-4F18-4EDD-A6FF-1902C8F24721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {4FD1393A-4F18-4EDD-A6FF-1902C8F24721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {4FD1393A-4F18-4EDD-A6FF-1902C8F24721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {4FD1393A-4F18-4EDD-A6FF-1902C8F24721}.Release|Any CPU.Build.0 = Release|Any CPU
+        {CDAEDCFF-DABC-437C-86ED-F71C53EA93B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {CDAEDCFF-DABC-437C-86ED-F71C53EA93B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {CDAEDCFF-DABC-437C-86ED-F71C53EA93B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {CDAEDCFF-DABC-437C-86ED-F71C53EA93B1}.Release|Any CPU.Build.0 = Release|Any CPU
+        {285548F3-5A9C-4D2E-9F18-2C24AF33EDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {285548F3-5A9C-4D2E-9F18-2C24AF33EDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {285548F3-5A9C-4D2E-9F18-2C24AF33EDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {285548F3-5A9C-4D2E-9F18-2C24AF33EDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+        {DD4465CD-BA29-43E9-B1FB-1550376471DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {DD4465CD-BA29-43E9-B1FB-1550376471DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {DD4465CD-BA29-43E9-B1FB-1550376471DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {DD4465CD-BA29-43E9-B1FB-1550376471DE}.Release|Any CPU.Build.0 = Release|Any CPU
+        {94186085-A70A-4679-BDA7-41C790871953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {94186085-A70A-4679-BDA7-41C790871953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {94186085-A70A-4679-BDA7-41C790871953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {94186085-A70A-4679-BDA7-41C790871953}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(SolutionProperties) = preSolution
+        HideSolutionNode = FALSE
+    EndGlobalSection
+EndGlobal
