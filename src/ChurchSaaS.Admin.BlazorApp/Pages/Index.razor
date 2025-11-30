@@ -42,7 +42,7 @@
                 </div>
                 <p class="stat-note">@card.Note</p>
                 <div class="sparkline">
-                    <div class="sparkline-bar" style=$"width:{card.Progress}%"></div>
+                    <div class="sparkline-bar" style="@($"width:{card.Progress}%")"></div>
                 </div>
             </article>
         }
@@ -61,7 +61,7 @@
                 @foreach (var attendance in AttendanceByDay)
                 {
                     <div class="bar-item">
-                        <div class="bar" style=$"height:{attendance.Percentage}%;"></div>
+                        <div class="bar" style="@($"height:{attendance.Percentage}%;")"></div>
                         <span class="bar-label">@attendance.Day</span>
                     </div>
                 }
@@ -85,7 +85,7 @@
                             <span class="caption">@center.Amount</span>
                         </div>
                         <div class="progress-bar">
-                            <div style=$"width:{center.Progress}%"></div>
+                            <div style="@($"width:{center.Progress}%")"></div>
                         </div>
                     </li>
                 }

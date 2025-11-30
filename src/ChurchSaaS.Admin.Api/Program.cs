@@ -1,20 +1,17 @@
-using ChurchSaaS.Admin.Application;
-using ChurchSaaS.Admin.Infrastructure;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddOpenApi();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/openapi/v1.json", "ChurchSaaS.Admin API v1");
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "ChurchSaaS.Admin API v1");
     });
 }
 
