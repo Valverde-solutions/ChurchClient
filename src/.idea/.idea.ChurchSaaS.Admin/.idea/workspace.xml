@@ -11,27 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ff4eb71-6355-4c76-b262-02e63bf19c44" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/App.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/ChurchSaaS.Admin.BlazorApp.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Components/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/Error.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/Index.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/_Host.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Services/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Shared/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/Shared/MainLayout.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/State/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/_Imports.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/wwwroot/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.BlazorApp/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Admin.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Login.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Routes.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Routes.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +31,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5af9fc9e4e9656f37613efe36625f832168e8333f86d484aaca47099ae6238/Debugger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Components/Pages/Login.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Components/Routes.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Components/Routes.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Evocode/AjuntamentoBackOffice/ChurchManagementBackOffice/src/ChurchSaaS.Admin.Web/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -166,7 +160,7 @@
       <workItem from="1764524882489" duration="5663000" />
       <workItem from="1764532003136" duration="2401000" />
       <workItem from="1764535117336" duration="4838000" />
-      <workItem from="1764540480060" duration="5322000" />
+      <workItem from="1764540480060" duration="7701000" />
     </task>
     <task id="LOCAL-00001" summary="ajustes">
       <option name="closed" value="true" />
@@ -184,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764529059588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="correções">
+      <option name="closed" value="true" />
+      <created>1764546155207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764546155207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +198,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="ajustes" />
     <MESSAGE value="ajsutes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajsutes" />
+    <MESSAGE value="correções" />
+    <option name="LAST_COMMIT_MESSAGE" value="correções" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -215,18 +218,18 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Login.razor</url>
-          <line>83</line>
+          <line>89</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Login.razor</url>
-          <line>72</line>
+          <line>77</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Login.razor</url>
-          <line>87</line>
-          <option name="timeStamp" value="7" />
+          <line>93</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

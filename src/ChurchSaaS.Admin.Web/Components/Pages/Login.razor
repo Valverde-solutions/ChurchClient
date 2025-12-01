@@ -1,6 +1,11 @@
 @page "/login"
 @using System.ComponentModel.DataAnnotations
 @using System.Text.RegularExpressions
+@using Microsoft.AspNetCore.Authorization
+@attribute [Layout(typeof(Layout.EmptyLayout))]
+@inject HttpClient Http
+@inject NavigationManager Nav
+@attribute [AllowAnonymous]
 
 <PageTitle>Login</PageTitle>
 
@@ -54,7 +59,7 @@
                            Color="Color.Primary"
                            Class="w-100 mb-2"
                            Size="Size.Large"
-                           Disabled="@(!_isValid)"
+                           Disabled="@(!_isValid || _isSubmitting)"
                            OnClick="@HandleSubmit">
                     Sign In
                 </MudButton>
@@ -79,13 +84,37 @@
     private bool _isValid;
     private string[] _errors = Array.Empty<string>();
     private readonly EmailAddressAttribute _emailAttribute = new() { ErrorMessage = "Enter a valid email" };
+    private bool _isSubmitting;
 
     private readonly LoginModel _model = new();
 
-    private Task HandleSubmit()
+    private async Task HandleSubmit()
     {
-        // Submit logic placeholder
-        return Task.CompletedTask;
+        _isSubmitting = true;
+        _errors = Array.Empty<string>();
+        try
+        {
+            await (_form?.Validate() ?? Task.CompletedTask);
+            if (!_isValid)
+            {
+                _errors = _form?.Errors?.ToArray() ?? Array.Empty<string>();
+                return;
+            }
+
+            var response = await Http.PostAsJsonAsync(Nav.ToAbsoluteUri("/auth/login"), _model);
+            if (response.IsSuccessStatusCode)
+            {
+                Nav.NavigateTo("/", forceLoad: true);
+            }
+            else
+            {
+                _errors = new[] { "Invalid credentials." };
+            }
+        }
+        finally
+        {
+            _isSubmitting = false;
+        }
     }
 
     private IEnumerable<string> PasswordStrength(string value)

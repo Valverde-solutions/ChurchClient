@@ -1,4 +1,6 @@
 @inherits LayoutComponentBase
+@inject HttpClient Http
+@inject NavigationManager Nav
 
 <MudThemeProvider Theme="@_theme" IsDarkMode="false" />
 <MudPopoverProvider />
@@ -52,6 +54,12 @@
                         <MudText Typo="Typo.caption" Class="text-muted">Founder</MudText>
                     </div>
                 </MudStack>
+                <MudButton Variant="Variant.Outlined"
+                           Color="Color.Error"
+                           Size="Size.Small"
+                           OnClick="@Logout">
+                    Logout
+                </MudButton>
             </MudStack>
         </MudAppBar>
 
@@ -98,4 +106,10 @@
     private void ExpandNav() => _drawerExpanded = true;
 
     private void CollapseNav() => _drawerExpanded = false;
+
+    private async Task Logout()
+    {
+        await Http.PostAsync(Nav.ToAbsoluteUri("/auth/logout"), null);
+        Nav.NavigateTo("/login", forceLoad: true);
+    }
 }
