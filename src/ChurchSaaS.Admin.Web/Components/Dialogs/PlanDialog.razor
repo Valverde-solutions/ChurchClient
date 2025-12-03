@@ -1,0 +1,90 @@
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components
+@using MudBlazor
+
+<MudCard>
+    <MudCardContent>
+        <EditForm Model="_form" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <MudGrid Spacing="2">
+                <MudItem xs="12" md="6">
+                    <MudTextField @bind-Value="_form.Code" Label="Codigo" Required="true" MaxLength="50" Disabled="IsEdit" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudTextField @bind-Value="_form.Name" Label="Nome" Required="true" MaxLength="200" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField @bind-Value="_form.Description" Label="Descricao" MaxLength="500" Lines="3" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudNumericField @bind-Value="_form.BasePrice" Label="Preco base" Adornment="Adornment.Start" AdornmentText="R$" Required="true" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudNumericField @bind-Value="_form.PricePerAdditionalTenant" Label="Preco por locatario extra" Adornment="Adornment.Start" AdornmentText="R$" Required="true" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudNumericField @bind-Value="_form.PricePerAdditionalMember" Label="Preco por membro extra" Adornment="Adornment.Start" AdornmentText="R$" Required="true" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudNumericField @bind-Value="_form.MaxTenants" Label="Maximo de locatarios" />
+                </MudItem>
+                <MudItem xs="12" md="6">
+                    <MudNumericField @bind-Value="_form.MaxMembers" Label="Maximo de membros" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudStack Row="true" Spacing="2" Class="flex-wrap mt-2">
+                        <MudSwitch T="bool" @bind-Checked="_form.HasFinance" Color="Color.Success">Financeiro</MudSwitch>
+                        <MudSwitch T="bool" @bind-Checked="_form.HasEvents" Color="Color.Success">Eventos</MudSwitch>
+                        <MudSwitch T="bool" @bind-Checked="_form.HasCommunication" Color="Color.Success">Comunicacao</MudSwitch>
+                        <MudSwitch T="bool" @bind-Checked="_form.HasKidsCheckin" Color="Color.Success">Check-in infantil</MudSwitch>
+                    </MudStack>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudStack Row="true" Justify="Justify.SpaceBetween" Spacing="2" Class="mt-4">
+                        <MudButton Variant="Variant.Text" Color="Color.Secondary" OnClick="Cancel">Cancelar</MudButton>
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">
+                            @(IsEdit ? "Atualizar" : "Salvar")
+                        </MudButton>
+                    </MudStack>
+                </MudItem>
+            </MudGrid>
+        </EditForm>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    [Parameter] public PlanDialogModel Model { get; set; } = new();
+    [Parameter] public bool IsEdit { get; set; }
+
+    [CascadingParameter] public MudDialog MudDialog { get; set; } = default!;
+
+    private readonly PlanDialogModel _form = new();
+
+    protected override void OnParametersSet()
+    {
+        _form.Code = Model.Code;
+        _form.Name = Model.Name;
+        _form.Description = Model.Description;
+        _form.BasePrice = Model.BasePrice;
+        _form.PricePerAdditionalTenant = Model.PricePerAdditionalTenant;
+        _form.PricePerAdditionalMember = Model.PricePerAdditionalMember;
+        _form.MaxTenants = Model.MaxTenants;
+        _form.MaxMembers = Model.MaxMembers;
+        _form.HasFinance = Model.HasFinance;
+        _form.HasEvents = Model.HasEvents;
+        _form.HasCommunication = Model.HasCommunication;
+        _form.HasKidsCheckin = Model.HasKidsCheckin;
+    }
+
+    private void HandleValidSubmit()
+    {
+        MudDialog.CloseAsync(DialogResult.Ok(_form));
+    }
+
+    private void Cancel()
+    {
+        MudDialog.CloseAsync();
+    }
+}

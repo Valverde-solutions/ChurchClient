@@ -1,6 +1,8 @@
+@using Microsoft.AspNetCore.Authorization
 @inherits LayoutComponentBase
 @inject HttpClient Http
 @inject NavigationManager Nav
+@attribute [Authorize]
 
 <MudThemeProvider Theme="@_theme" IsDarkMode="false" />
 <MudPopoverProvider />
