@@ -1,8 +1,8 @@
-using ChurchSaaS.Admin.Domain.Abstractions;
+using ChurchSaaS.Client.Domain.Abstractions;
 
-namespace ChurchSaaS.Admin.Domain.Entities;
+namespace ChurchSaaS.Client.Domain.Entities;
 
-public class Endereco : Entity<int>
+public class Endereco : TenantAuditableEntity<int>
 {
     public string Logradouro { get; set; } = string.Empty;
     public string? Numero { get; set; }

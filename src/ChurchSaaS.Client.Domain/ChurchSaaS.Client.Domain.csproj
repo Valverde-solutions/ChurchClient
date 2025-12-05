@@ -3,7 +3,6 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>ChurchSaaS.Admin.Domain</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Churches\" />

@@ -1,6 +1,7 @@
 using ChurchSaaS.Admin.Domain.Entities;
 using ChurchSaaS.Client.Application.Interfaces.Repositories;
 using ChurchSaaS.Admin.Infrastructure.Persistence;
+using ChurchSaaS.Client.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChurchSaaS.Admin.Infrastructure.Repositories;

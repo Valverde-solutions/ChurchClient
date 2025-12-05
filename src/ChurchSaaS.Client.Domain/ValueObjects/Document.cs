@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
 using ChurchSaaS.Admin.Domain.Abstractions;
 
-namespace ChurchSaaS.Admin.Domain.ValueObjects;
+namespace ChurchSaaS.Client.Domain.ValueObjects;
 
 public sealed class Document : ValueObject
 {

@@ -1,4 +1,5 @@
 using ChurchSaaS.Admin.Domain.Entities;
+using ChurchSaaS.Client.Domain.Entities;
 
 namespace ChurchSaaS.Client.Application.Interfaces.Repositories;
 

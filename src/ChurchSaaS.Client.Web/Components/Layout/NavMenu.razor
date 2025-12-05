@@ -2,54 +2,28 @@
 
 <MudNavMenu Class="@($"nav-rail {(Expanded ? "expanded" : "collapsed")}")">
     <div class="nav-section brand-row">
-        <MudText Typo="Typo.h6" Class="brand-text">VELZON</MudText>
-        <MudIconButton Icon="@Icons.Material.Filled.RadioButtonUnchecked" Color="Color.Inherit" Size="Size.Medium" />
+        <MudText Typo="Typo.h6" Class="brand-text">ChurchSaaS</MudText>
+        <MudIcon Icon="@Icons.Material.Filled.DashboardCustomize" Color="Color.Primary" />
     </div>
 
     <div class="nav-section">
         <MudNavLink Href="" Match="NavLinkMatch.All">
-            <MudIcon Icon="@Icons.Material.Filled.Apps" />
-            <span class="nav-label">Apps</span>
-            <MudIcon Icon="@Icons.Material.Filled.ChevronRight" Class="nav-end" />
-        </MudNavLink>
-
-        <MudNavLink Disabled="true">
-            <MudIcon Icon="@Icons.Material.Filled.ViewQuilt" />
-            <span class="nav-label">Layouts</span>
-            <MudChip T="string" Color="Color.Error" Size="Size.Small" Class="nav-badge">Hot</MudChip>
-        </MudNavLink>
-    </div>
-
-    <div class="nav-section">
-        <MudText Typo="Typo.overline" Class="nav-section-title">Pages</MudText>
-        <MudNavLink Href="login">
-            <MudIcon Icon="@Icons.Material.Filled.ManageAccounts" />
-            <span class="nav-label">Authentication</span>
-            <MudIcon Icon="@Icons.Material.Filled.ChevronRight" Class="nav-end" />
+            <MudIcon Icon="@Icons.Material.Filled.Home" />
+            <span class="nav-label">Início</span>
         </MudNavLink>
         <MudNavLink Href="plans">
             <MudIcon Icon="@Icons.Material.Filled.ViewAgenda" />
-            <span class="nav-label">Plans</span>
-            <MudIcon Icon="@Icons.Material.Filled.ChevronRight" Class="nav-end" />
+            <span class="nav-label">Planos</span>
         </MudNavLink>
         <MudNavLink Href="clients">
-            <MudIcon Icon="@Icons.Material.Filled.Groups" />
-            <span class="nav-label">Clients</span>
-            <MudIcon Icon="@Icons.Material.Filled.ChevronRight" Class="nav-end" />
+            <MudIcon Icon="@Icons.Material.Filled.Apartment" />
+            <span class="nav-label">Clientes</span>
         </MudNavLink>
-        <MudNavLink Disabled="true">
-            <MudIcon Icon="@Icons.Material.Filled.Article" />
-            <span class="nav-label">Pages</span>
-            <MudIcon Icon="@Icons.Material.Filled.ChevronRight" Class="nav-end" />
-        </MudNavLink>
-        <MudNavLink Disabled="true">
-            <MudIcon Icon="@Icons.Material.Filled.FlightLand" />
-            <span class="nav-label">Landing</span>
-            <MudIcon Icon="@Icons.Material.Filled.ChevronRight" Class="nav-end" />
+        <MudNavLink Href="login">
+            <MudIcon Icon="@Icons.Material.Filled.ManageAccounts" />
+            <span class="nav-label">Acesso</span>
         </MudNavLink>
     </div>
-
-    
 </MudNavMenu>
 
 @code {

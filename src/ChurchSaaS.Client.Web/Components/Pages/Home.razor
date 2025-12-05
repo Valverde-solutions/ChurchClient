@@ -1,150 +1,100 @@
 @page "/"
 
-<PageTitle>Dashboard</PageTitle>
+<PageTitle>Início</PageTitle>
 
-<div class="hero-row">
-    <div>
-        <MudText Typo="Typo.h5" Class="fw-700">Good Morning, Anna!</MudText>
-        <MudText Typo="Typo.body1" Class="text-muted">Here's what's happening with your store today.</MudText>
+<MudStack Spacing="3">
+    <div class="hero-row">
+        <div>
+            <MudText Typo="Typo.h5" Class="fw-700">Painel da plataforma</MudText>
+            <MudText Typo="Typo.body2" Class="text-muted">Visão rápida das igrejas, unidades e usuários.</MudText>
+        </div>
+        <MudStack Row="true" Spacing="1" AlignItems="AlignItems.Center">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.AddBusiness">
+                Nova igreja
+            </MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" StartIcon="@Icons.Material.Filled.GroupAdd">
+                Convidar gestor
+            </MudButton>
+        </MudStack>
     </div>
-    <MudStack Row="true" Spacing="1" AlignItems="AlignItems.Center" Class="hero-actions">
-        <MudPaper Class="date-chip" Elevation="0">
-            <MudText Typo="Typo.body2">01 Jan, 2025 to 31 Jan, 2025</MudText>
-            <MudIconButton Icon="@Icons.Material.Filled.CalendarMonth" Color="Color.Primary" Size="Size.Small" />
-        </MudPaper>
-        <MudButton Variant="Variant.Outlined" Color="Color.Success" StartIcon="@Icons.Material.Filled.AddBox">Add Product</MudButton>
-        <MudIconButton Icon="@Icons.Material.Filled.Tune" Color="Color.Default" />
-    </MudStack>
-</div>
 
-<MudGrid Class="stat-grid">
-    @foreach (var card in _metricCards)
-    {
-        <MudItem xs="12" md="6" lg="3">
-            <MudPaper Class="stat-card" Elevation="0">
-                <MudStack Spacing="1">
-                    <MudText Typo="Typo.overline">@card.Title</MudText>
-                    <MudStack Row="true" Spacing="2" AlignItems="AlignItems.Center" Justify="Justify.SpaceBetween">
+    <MudGrid Class="stat-grid">
+        @foreach (var card in _metricCards)
+        {
+            <MudItem xs="12" md="6" lg="3">
+                <MudPaper Class="stat-card" Elevation="0">
+                    <MudStack Spacing="1">
+                        <MudStack Row="true" Spacing="1" AlignItems="AlignItems.Center">
+                            <MudAvatar Color="Color.Primary" Class="icon-pill" Icon="@card.Icon" Size="Size.Medium" />
+                            <MudText Typo="Typo.overline">@card.Title</MudText>
+                        </MudStack>
                         <MudText Typo="Typo.h5">@card.Value</MudText>
-                        <MudAvatar Color="Color.Transparent" Class="icon-pill" Icon="@card.Icon" Size="Size.Medium" />
+                        <MudText Typo="Typo.caption" Class="text-muted">@card.Caption</MudText>
                     </MudStack>
-                    <MudStack Row="true" Spacing="1" AlignItems="AlignItems.Center">
-                        <MudText Typo="Typo.caption" Class="@card.TrendClass">@card.Trend</MudText>
-                        <MudText Typo="Typo.caption">
-                            @card.LinkText
-                        </MudText>
-                    </MudStack>
-                </MudStack>
+                </MudPaper>
+            </MudItem>
+        }
+    </MudGrid>
+
+    <MudGrid Class="section-grid">
+        <MudItem xs="12" lg="8">
+            <MudPaper Class="panel-card" Elevation="0">
+                <div class="panel-header">
+                    <MudText Typo="Typo.h6">Unidades por tipo</MudText>
+                    <MudChip T="string" Color="Color.Primary" Variant="Variant.Outlined" Class="filter-chip" Selected="true">Últimos 30 dias</MudChip>
+                </div>
+                <MudChart ChartType="ChartType.Bar"
+                          Labels="@_chartLabels"
+                          Datasets="@_chartData"
+                          Class="revenue-chart" />
             </MudPaper>
         </MudItem>
-    }
-</MudGrid>
 
-<MudGrid Class="section-grid">
-    <MudItem xs="12" lg="8">
-        <MudPaper Class="panel-card revenue-card" Elevation="0">
-            <div class="panel-header">
-                <MudText Typo="Typo.h6">Revenue</MudText>
-                <MudStack Row="true" Spacing="1">
-                    <MudChip T="string" Color="Color.Primary" Variant="Variant.Outlined" Class="filter-chip" Selected="true">ALL</MudChip>
-                    <MudChip T="string" Variant="Variant.Text" Class="filter-chip">1M</MudChip>
-                    <MudChip T="string" Variant="Variant.Text" Class="filter-chip">6M</MudChip>
-                    <MudChip T="string" Variant="Variant.Text" Class="filter-chip">1Y</MudChip>
-                </MudStack>
-            </div>
-
-            <MudGrid Class="revenue-kpis">
-                <MudItem xs="6" md="3">
-                    <div class="kpi-block">
-                        <MudText Typo="Typo.subtitle2">7,585</MudText>
-                        <MudText Typo="Typo.caption" Class="text-muted">Orders</MudText>
-                    </div>
-                </MudItem>
-                <MudItem xs="6" md="3">
-                    <div class="kpi-block">
-                        <MudText Typo="Typo.subtitle2">$22.89k</MudText>
-                        <MudText Typo="Typo.caption" Class="text-muted">Earnings</MudText>
-                    </div>
-                </MudItem>
-                <MudItem xs="6" md="3">
-                    <div class="kpi-block">
-                        <MudText Typo="Typo.subtitle2">367</MudText>
-                        <MudText Typo="Typo.caption" Class="text-muted">Refunds</MudText>
-                    </div>
-                </MudItem>
-                <MudItem xs="6" md="3">
-                    <div class="kpi-block">
-                        <MudText Typo="Typo.subtitle2" Class="text-success">18.92%</MudText>
-                        <MudText Typo="Typo.caption" Class="text-muted">Conversation Ratio</MudText>
-                    </div>
-                </MudItem>
-            </MudGrid>
-
-            <MudChart ChartType="ChartType.Bar"
-                      Labels="@_chartLabels"
-                      Datasets="@_chartData"
-                      Class="revenue-chart" />
-        </MudPaper>
-    </MudItem>
-
-    <MudItem xs="12" lg="4">
-        <MudPaper Class="panel-card location-card" Elevation="0">
-            <div class="panel-header">
-                <MudText Typo="Typo.h6">Sales by Locations</MudText>
-                <MudButton Variant="Variant.Outlined" Color="Color.Info" Size="Size.Small">Export Report</MudButton>
-            </div>
-
-            <MudStack Spacing="2" Class="mt-2">
-                @foreach (var location in _locations)
-                {
-                    <div>
-                        <MudStack Row="true" Justify="Justify.SpaceBetween" AlignItems="AlignItems.Center">
-                            <MudStack Row="true" Spacing="1" AlignItems="AlignItems.Center">
-                                <MudAvatar Size="Size.Small" Color="@location.Color" />
-                                <MudText Typo="Typo.body2">@location.Name</MudText>
-                            </MudStack>
-                            <MudText Typo="Typo.body2">@location.Value%</MudText>
-                        </MudStack>
-                        <MudProgressLinear Value="@location.Value"
-                                           Color="Color.Primary"
-                                           Class="location-progress"
-                                           Rounded="true" />
-                    </div>
-                }
-            </MudStack>
-        </MudPaper>
-    </MudItem>
-</MudGrid>
+        <MudItem xs="12" lg="4">
+            <MudPaper Class="panel-card" Elevation="0">
+                <div class="panel-header">
+                    <MudText Typo="Typo.h6">Atalhos rápidos</MudText>
+                </div>
+                <MudList T="string" Dense="true">
+                    <MudListItem>
+                        <MudListItemIcon>
+                            <MudIcon Icon="@Icons.Material.Filled.DomainAdd" Color="Color.Primary" />
+                        </MudListItemIcon>
+                        <MudListItemText>Registrar nova igreja</MudListItemText>
+                    </MudListItem>
+                    <MudListItem>
+                        <MudListItemIcon>
+                            <MudIcon Icon="@Icons.Material.Filled.AccountTree" Color="Color.Primary" />
+                        </MudListItemIcon>
+                        <MudListItemText>Criar unidade filha</MudListItemText>
+                    </MudListItem>
+                    <MudListItem>
+                        <MudListItemIcon>
+                            <MudIcon Icon="@Icons.Material.Filled.GroupWork" Color="Color.Primary" />
+                        </MudListItemIcon>
+                        <MudListItemText>Gerenciar gestores e papéis</MudListItemText>
+                    </MudListItem>
+                </MudList>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudStack>
 
 @code {
     private readonly IReadOnlyList<MetricCard> _metricCards = new List<MetricCard>
     {
-        new("Total Earnings", "$559.25k", "+16.24 %", Icons.Material.Filled.AttachMoney, true, "View net earnings"),
-        new("Orders", "36,894", "-3.57 %", Icons.Material.Filled.ShoppingBag, false, "View all orders"),
-        new("Customers", "183.35M", "+29.08 %", Icons.Material.Filled.Person, true, "See details"),
-        new("My Balance", "$165.89k", "+0.00 %", Icons.Material.Filled.AccountBalanceWallet, true, "Withdraw money")
+        new("Igrejas (tenants)", "12", "Organizações ativas", Icons.Material.Filled.Apartment),
+        new("Unidades totais", "84", "Inclui sedes e congregações", Icons.Material.Filled.AccountTree),
+        new("Gestores", "47", "Usuários com papéis administrativos", Icons.Material.Filled.Badge),
+        new("Membros", "1.2k", "Cadastros de pessoas", Icons.Material.Filled.Groups)
     };
 
-    private readonly string[] _chartLabels = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug" };
+    private readonly string[] _chartLabels = { "Regional", "Sede", "Congregação", "Ponto" };
 
     private readonly ChartSeries[] _chartData =
     {
-        new() { Name = "Revenue", Data = new double[] { 65, 78, 58, 84, 62, 73, 55, 88 } },
-        new() { Name = "Orders", Data = new double[] { 45, 55, 42, 60, 48, 53, 38, 67 } }
+        new() { Name = "Unidades", Data = new double[] { 4, 12, 56, 12 } }
     };
 
-    private readonly IReadOnlyList<LocationStat> _locations = new List<LocationStat>
-    {
-        new("Canada", 75, Color.Info),
-        new("Greenland", 65, Color.Warning),
-        new("Palestine", 45, Color.Primary),
-        new("Russia", 38, Color.Secondary)
-    };
-
-    private record MetricCard(string Title, string Value, string Trend, string Icon, bool IsPositive, string LinkText)
-    {
-        public string TrendClass => IsPositive ? "trend-up" : "trend-down";
-    }
-
-    private record LocationStat(string Name, int Value, Color Color);
+    private record MetricCard(string Title, string Value, string Caption, string Icon);
 }

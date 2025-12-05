@@ -5,8 +5,12 @@ using ChurchSaaS.Admin.Infrastructure;
 using ChurchSaaS.Admin.Infrastructure.Persistence;
 using FluentValidation;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using FluentValidation;
+using ChurchSaaS.Client.Application.Commands.ChurchUnits;
+using ChurchSaaS.Client.Infrastructure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +38,12 @@ builder.Services.AddDbContext<AdminDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>()
+    .AddEntityFrameworkStores<AdminDbContext>()
+    .AddDefaultTokenProviders();
+
 builder.Services.AddMediatR(typeof(CreateChurchClientCommand).Assembly);
+builder.Services.AddValidatorsFromAssemblyContaining<CreateChurchUnitCommand>();
 
 
 builder.Services.AddInfrastructure();

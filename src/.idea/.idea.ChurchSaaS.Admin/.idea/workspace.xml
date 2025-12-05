@@ -11,119 +11,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ff4eb71-6355-4c76-b262-02e63bf19c44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/ChurchSaaS.Client.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/ChurchSaaS.Client.Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ChurchSaaS.Client.Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/ChurchSaaS.Client.Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/ChurchSaaS.Client.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Client/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChurchSaaS.Client.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChurchSaaS.Admin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/ChurchSaaS.Admin.Api.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Configurations/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Configurations/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Controllers/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Controllers/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Controllers/ChurchClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Controllers/ChurchClientsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Database/identity-postgres.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Database/identity-postgres.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Endpoints/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Endpoints/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Endpoints/CreateChurchClientRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Endpoints/CreateChurchClientRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Filters/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Filters/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Middlewares/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Middlewares/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Api/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Abstractions/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Abstractions/Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Behaviors/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Behaviors/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/ChurchSaaS.Admin.Application.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Commands/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/ChurchClients/CreateChurchClientAddress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Commands/ChurchClients/CreateChurchClientAddress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/ChurchClients/CreateChurchClientCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Commands/ChurchClients/CreateChurchClientCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/ChurchClients/CreateChurchClientCommandHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/Plans/CreatePlanCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/Plans/UpdatePlanCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/DTOs/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/DTOs/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Interfaces/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Interfaces/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Interfaces/Repositories/IChurchClientRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Interfaces/Repositories/ICidadeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Interfaces/Repositories/ICidadeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Interfaces/Repositories/IEnderecoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Interfaces/Repositories/IEnderecoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Interfaces/Repositories/IEstadoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Interfaces/Repositories/IEstadoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Interfaces/Repositories/IPlanRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Queries/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Queries/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Queries/ChurchClients/ListChurchClientsQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Queries/Plans/ListPlansQuery.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Services/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Validators/CreateChurchClientCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Validators/CreatePlanCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Application/Validators/UpdatePlanCommandValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Abstractions/AuditableEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Abstractions/AuditableEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Abstractions/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Abstractions/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Abstractions/IAggregateRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Abstractions/IAggregateRoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Abstractions/ValueObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Abstractions/ValueObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Aggregates/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Aggregates/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/ChurchSaaS.Admin.Domain.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/DomainEvents/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/DomainEvents/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Entities/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Entities/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Entities/ChurchClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Entities/Cidade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Entities/Cidade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Entities/Endereco.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Entities/Endereco.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Entities/Estado.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Entities/Estado.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Entities/Plan.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Enuns/ChurchClientStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Enuns/ChurchClientStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Repositories/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/Services/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Services/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/ValueObjects/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/ValueObjects/Document.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/Document.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/ValueObjects/Email.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/Email.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Domain/ValueObjects/PhoneNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/PhoneNumber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/ChurchSaaS.Admin.Infrastructure.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Configurations/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Configurations/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Configurations/ChurchClientConfiguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Configurations/CidadeConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Configurations/CidadeConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Configurations/EnderecoConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Configurations/EnderecoConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Configurations/EstadoConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Configurations/EstadoConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Configurations/PlanConfiguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Migrations/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Migrations/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Persistence/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Persistence/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Persistence/AdminDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Persistence/AdminDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Repositories/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Repositories/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Repositories/ChurchClientRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Repositories/CidadeRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Repositories/CidadeRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Repositories/EnderecoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Repositories/EnderecoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Repositories/EstadoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Repositories/EstadoRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Infrastructure/Repositories/PlanRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/ChurchSaaS.Admin.Web.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Dialogs/PlanDialog.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Dialogs/PlanDialog.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Dialogs/PlanDialogModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Dialogs/PlanDialogModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Layout/EmptyLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Layout/EmptyLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Layout/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Clients.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Counter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Pages/Counter.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Error.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Pages/Error.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Pages/Login.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Plans.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Pages/Weather.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Pages/Weather.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/RedirectToLogin.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/RedirectToLogin.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/Routes.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/Routes.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Components/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Components/_Imports.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/wwwroot/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.Web/wwwroot/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Web/wwwroot/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Admin.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Interfaces/Repositories/IEnderecoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Application/Interfaces/Repositories/IEnderecoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ChurchSaaS.Client.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ChurchSaaS.Client.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Entities/Endereco.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/Entities/Endereco.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/Document.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/Document.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/Email.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/Email.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/PhoneNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Domain/ValueObjects/PhoneNumber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/ChurchSaaS.Client.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/ChurchSaaS.Client.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Configurations/EnderecoConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Configurations/EnderecoConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Persistence/AdminDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Persistence/AdminDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Repositories/EnderecoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChurchSaaS.Client.Infrastructure/Repositories/EnderecoRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +55,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e36f79053446033ddbc7cc8397a3d0627114f46f804559a98a094977b488d/RequestExceptionProcessorBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/74e4c72cd3922ed61496931f33baf4a9b5950edddb6b78bc296241285f25c3/TaskAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d7e2ce30531b7a2d56142411c5e51c3d516aafcb44e7628167b959660a65c/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ChurchSaaS.Admin.Application/Commands/ChurchClients/CreateChurchClientAddress.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChurchSaaS.Client.Application/Commands/ChurchClients/CreateChurchClientAddress.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -306,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764548770689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="correções no projeto">
+      <option name="closed" value="true" />
+      <created>1764769316842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764769316843</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +236,8 @@
     <MESSAGE value="ajsutes" />
     <MESSAGE value="correções" />
     <MESSAGE value="correções identity" />
-    <option name="LAST_COMMIT_MESSAGE" value="correções identity" />
+    <MESSAGE value="correções no projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="correções no projeto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

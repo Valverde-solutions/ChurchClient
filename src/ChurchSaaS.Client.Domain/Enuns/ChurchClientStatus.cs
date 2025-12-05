@@ -1,4 +1,4 @@
-namespace ChurchSaaS.Admin.Domain.Churches;
+namespace ChurchSaaS.Client.Domain.Enuns;
 
 public enum ChurchClientStatus
 {
